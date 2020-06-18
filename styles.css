@@ -87,6 +87,20 @@ a , span, button,  p, h3{
 
 /* Left pane active link end */
 
+.selectall{
+    font-weight: 700; 
+    font-size: large; 
+    padding-top: 10px;
+}
+
+.check{
+    margin-right: 30px;
+}
+
+.right-heading{
+    font-weight: 700;
+}
+
 @media(max-width: 991px){
     
     .left-panel{
@@ -144,7 +158,7 @@ a , span, button,  p, h3{
 
 }    
 
-@media(max-width: 508px){
+@media(max-width: 506px){
     .user{
         color: #08d9d6; 
         font-weight: 500; 
@@ -160,7 +174,43 @@ a , span, button,  p, h3{
     .float{
         float: none;
     }
+
+    .selectall{
+        font-size: 0.9rem;
+    }
 }  
+
+@media(max-width: 396px){
+    .user{
+        color: #08d9d6; 
+        font-weight: 500; 
+        font-size: 0.9rem;
+    }
+    
+    .email{
+        font-weight: 500; 
+        font-size: 0.9rem;
+        padding-left: 42px;
+    }
+
+    .float{
+        float: none;
+    }
+
+    .selectall{
+        font-size: 0.8rem;
+        font-weight: normal;
+    }
+
+    .check{
+        margin-right: 5px;
+    }
+
+    .right-heading{
+        font-size: 1.4rem;
+    }
+}  
+
 
 /*************************************** Batch Details only CSS **********************************/
 

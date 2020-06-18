@@ -1,0 +1,170 @@
+/****************************************** common css **************************************/
+
+.body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link{
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.logout{
+    background-color:white ; 
+    color: #08d9d6; 
+    font-weight: 550;
+}
+
+.manage{
+    text-align: center; 
+    padding-top: 20px; 
+    color: white; 
+    font-size: 2.5rem; 
+    font-weight: 600;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-weight: 600; 
+    font-size: 1.3rem;
+    letter-spacing: 1.2px;
+}
+
+a , span, button,  p, h3{
+    font-family:"Montserrat";
+}
+
+.manage-list :hover{
+    text-decoration: none;
+    color: #efefef;
+}
+
+.add-btn{
+    position: absolute; 
+    right: 19px; 
+    top:17px; 
+    font-weight: 500; 
+    background-color: white;
+}
+
+.manage-list{
+    margin-bottom: 25px; 
+    padding-left: 25px;
+}
+
+.left-panel{
+    margin-right: 50px; 
+    background-color: #08d9d6; 
+    height: 81vh
+}
+
+.nav1{
+    background-color: #08d9d6; 
+    margin: 25px;
+}
+
+.main-div{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}   
+
+/* For left pane active link */
+
+.active1{
+    background-color: white;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+.active{
+    color: #08d9d6;
+}
+
+/* Left pane active link end */
+
+@media(max-width: 991px){
+    
+    .left-panel{
+        margin-right: 0px; 
+        background-color: #08d9d6;
+        height: auto;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .main-div{
+        margin-top: 0px;
+    }
+
+    .nav1{
+        margin-bottom: 0px;
+    }
+
+}
+
+/************************************ Batch Users only CSS *********************************************/
+
+.user{
+    color: #08d9d6; 
+    font-weight: 600; 
+    font-size: 1.1rem;
+}
+
+.email{
+    font-weight: 600; 
+    font-size: 1.1rem;
+}
+
+.float{
+    float: right;
+}
+
+@media(max-width: 1025px){
+    .nav-link{
+        margin-left: 10px;
+    }
+}
+
+@media(max-width: 623px){
+    .user{
+        color: #08d9d6; 
+        font-weight: 500; 
+        font-size: 0.9rem;
+    }
+    
+    .email{
+        font-weight: 500; 
+        font-size: 0.9rem;
+    }
+
+}    
+
+@media(max-width: 508px){
+    .user{
+        color: #08d9d6; 
+        font-weight: 500; 
+        font-size: 0.9rem;
+    }
+    
+    .email{
+        font-weight: 500; 
+        font-size: 0.9rem;
+        padding-left: 42px;
+    }
+
+    .float{
+        float: none;
+    }
+}  
+
+/*************************************** Batch Details only CSS **********************************/
+
+
+
+/*************************************** Batch Videos only CSS **********************************/
+

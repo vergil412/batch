@@ -2,97 +2,248 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light nav1" >
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white;">Dashboard</a>
+  <nav class="navbar navbar-expand-lg navbar-light nav1">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Forum</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Batches</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">All Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Announcements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">What's new?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="color: white;">Report Bug</a>
+        </li>
+      </ul>
+    </div>
+    <button class="btn btn-light logout">Logout</button>
+  </nav>
+
+  <div class="container-fluid main-div">
+    <div class="row">
+
+      <div class="col-lg-3" style="padding: 0px;">
+
+        <div class="left-panel">
+          <h3 class="manage">Manage</h3>
+          <ul class="nav nav-pills flex-column" style="margin-top: 50px;">
+            <li class="nav-item manage-list">
+              <a class="link" href="details.html"><i class="fa fa-info-circle" aria-hidden="true"></i> Batch Details</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white;">Forum</a>
+            <li class="nav-item manage-list">
+              <a class="link" href="index.html"><i class="fa fa-users" aria-hidden="true"></i> Users</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white;">Batches</a>
+            <li class="nav-item manage-list active1">
+              <a class="link active" href="videos.html"><i class="fa fa-video-camera" aria-hidden="true"></i> Videos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white;">All Videos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white;">Courses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white;">Announcements</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white;">What's new?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white;">Report Bug</a>
+            <li class="nav-item manage-list" style="margin-bottom: 25px; padding-left: 25px;">
+              <a class="link" href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Settings</a>
             </li>
           </ul>
-        </div> 
-        <button  class="btn btn-light logout">Logout</button>
-    </nav>
-      
-    <div class="container-fluid main-div" >
-        <div class="row">
-          <div class="col-lg-3" style="padding: 0px;">
-              <div class="left-panel">
-                    <h3 class="manage">Manage</h3>                    
-                    <ul class="nav nav-pills flex-column" style="margin-top: 50px;">
-                        <li class="nav-item manage-list">
-                            <a class="link" href="details.html"><i class="fa fa-info-circle" aria-hidden="true"></i>  Batch Details</a>
-                        </li>
-                        <li class="nav-item manage-list">
-                            <a class="link" href="index.html"><i class="fa fa-users" aria-hidden="true"></i>  Users</a>
-                        </li>
-                         <li class="nav-item manage-list active1">
-                            <a class="link active" href="videos.html"><i class="fa fa-video-camera" aria-hidden="true"></i>  Videos</a>
-                        </li>
-                        <li class="nav-item manage-list" style="margin-bottom: 25px; padding-left: 25px;">
-                            <a class="link" href="#"><i class="fa fa-cogs" aria-hidden="true"></i>  Settings</a>
-                        </li>
-                    </ul>
-              </div>
-          </div>
-          <div class="col-lg-9" style="padding: 20px; background-color: #efefef;">
-            <h3 class="right-heading">Batch Videos </h3>
-             <button class="btn btn-light add-btn"><i class="fa fa-plus" aria-hidden="true"></i>  Add Video</button>
-             <div style="margin-top: 20px; padding: 15px; background-color: white;">
-                 <span class="selectall"><input type="checkbox" class="check">Select/Unselect All</span><span style="position: absolute; right: 30px; top: 82.5px;"><button  class="btn btn-light" style="background-color: #08d9d6; color: white;">Delete</button></span>
-             </div>
         </div>
+
+      </div>
+
+      <div class="col-lg-9" style="padding: 20px; background-color: #efefef;">
+
+        <h3 class="right-heading">Batch Videos </h3>
+        <button class="btn btn-light add-btn" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"
+            aria-hidden="true"></i> Add Video</button>
+
+        <div style="margin-top: 20px; padding: 15px; background-color: white;">
+          <span class="selectall"><input type="checkbox" class="check">Select/Unselect All</span>
+          <span style="position: absolute; right: 30px; top: 82.5px;">
+            <button class="btn btn-light" style="background-color: #08d9d6; color: white;">Delete</button>
+          </span>
+        </div>
+
+        <div style="background-color: white; margin-top: 20px; padding: 20px;">
+
+          <div class="row">
+
+            <div class="col-lg-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" src="photo.jpeg" alt="Card image">
+                <h6 class="card-title"
+                  style="font-weight: 700; margin-top: 10px; margin-left: 10px; font-size: 1.1rem;"><input
+                    type="checkbox" style="margin-right: 10px;">
+                  BELLMAN</h6>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" src="photo.jpeg" alt="Card image">
+                <h5 class="card-title"
+                  style="font-weight: 700; margin-top: 10px; margin-left: 10px; font-size: 1.1rem;"><input
+                    type="checkbox" style="margin-right: 10px;">
+                  BFS THEORY</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" src="photo.jpeg" alt="Card image">
+                <h5 class="card-title"
+                  style="font-weight: 700; margin-top: 10px; margin-left: 10px; font-size: 1.1rem;"><input
+                    type="checkbox" style="margin-right: 10px;">
+                  BFS PROBLEMS</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" src="photo.jpeg" alt="Card image">
+                <h5 class="card-title"
+                  style="font-weight: 700; margin-top: 10px; margin-left: 10px; font-size: 1.1rem;"><input
+                    type="checkbox" style="margin-right: 10px;">
+                  ROOK BFS</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" src="photo.jpeg" alt="Card image">
+                <h5 class="card-title"
+                  style="font-weight: 700; margin-top: 10px; margin-left: 10px; font-size: 1.1rem;"><input
+                    type="checkbox" style="margin-right: 10px;">
+                  CROSS EDGE</h5>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <div class="card">
+                <img class="card-img-top" src="photo.jpeg" alt="Card image">
+                <h5 class="card-title"
+                  style="font-weight: 700; margin-top: 10px; margin-left: 10px; font-size: 1.1rem;"><input
+                    type="checkbox" style="margin-right: 10px;">
+                  DIRECTED CYCLE</h5>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
     </div>
-</div>
+
+  </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header" style="border-bottom: none;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+
+          <div style="border-style: solid; border-color: #efefef; padding: 10px; margin-bottom: 10px;">
+            <input type="checkbox"><span class="select-video">Select/Unselect
+              All</span>
+            <button class="btn btn-light"
+              style="background-color: #08d9d6; color: white;font-weight: 600 ;position: absolute; right: 25px; top: 24px;"><i
+                class="fa fa-plus" aria-hidden="true" style="margin-right: 5px;"></i> Add</button>
+          </div>
+
+          <div style="border-style: solid; border-color: #efefef; padding: 5px;">
+            <input type="checkbox" style="margin-left: 5px;"><span class="videos-link">Bellman</span>
+          </div>
+          <div style="border-style: solid; border-color: #efefef; padding: 5px;">
+            <input type="checkbox" style="margin-left: 5px;" style="margin-left: 5px;"><span class="videos-link">BFS
+              Theory</span>
+          </div>
+          <div style="border-style: solid; border-color: #efefef; padding: 5px;">
+            <input type="checkbox" style="margin-left: 5px;"><span class="videos-link">BFS
+              Problems</span>
+          </div>
+          <div style="border-style: solid; border-color: #efefef; padding: 5px;">
+            <input type="checkbox" style="margin-left: 5px;"><span class="videos-link">MST Full</span>
+          </div>
+          <div style="border-style: solid; border-color: #efefef; padding: 5px;">
+            <input type="checkbox" style="margin-left: 5px;"><span class="videos-link">Rook BFS</span>
+          </div>
+          <div style="border-style: solid; border-color: #efefef; padding: 5px;">
+            <input type="checkbox" style="margin-left: 5px;"><span class="videos-link">Black and Cross
+              Edge Concept</span>
+          </div>
+          <div style="border-style: solid; border-color: #efefef; padding: 5px;">
+            <input type="checkbox" style="margin-left: 5px;"><span class="videos-link">Directed Circle
+              Edge Types</span>
+          </div>
+          <div style="border-style: solid; border-color: #efefef; padding: 5px;">
+            <input type="checkbox" style="margin-left: 5px;"><span class="videos-link">Topo
+              Idea</span>
+          </div>
+          <div style="border-style: solid; border-color: #efefef; padding: 5px;">
+            <input type="checkbox" style="margin-left: 5px;"><span class="videos-link">Dijkstra
+              Code</span>
+          </div>
+
+        </div>
+
+
+        <!-- Modal footer -->
+        <div class="modal-footer" style="border-top: none;">
+          <button type="button" class="btn btn-primary"
+            style="background-color: #08d9d6; color: white;font-weight: 600 ; border: none;"
+            data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 
 
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-<script src="index.js" charset="UTF-8"></script>
+  <script src="index.js" charset="UTF-8"></script>
 </body>
 
 </html>

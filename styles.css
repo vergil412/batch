@@ -4,6 +4,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .nav-link{
     margin-left: 20px;
     font-weight: 600;
@@ -12,7 +19,7 @@
 .logout{
     background-color:white ; 
     color: #08d9d6; 
-    font-weight: 550;
+    font-weight: 600;
 }
 
 .manage{
@@ -67,13 +74,14 @@ a , span, button,  p, h3, label, h6, h5{
 
 .nav1{
     background-color: #08d9d6; 
-    margin: 25px;
+    margin: 15px;
 }
 
 .main-div{
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 10px;
 }   
 
 /* For left pane active link */
@@ -131,10 +139,16 @@ a , span, button,  p, h3, label, h6, h5{
 
     .main-div{
         margin-top: 0px;
+        padding-top: 0px;
     }
 
     .nav1{
         margin-bottom: 0px;
+    }
+
+    .logout{
+        margin-left: 10px;
+        margin-top: 5px;
     }
 
 }

@@ -59,6 +59,12 @@ a , span, button,  p, h3, label, h6, h5{
     height: 81vh
 }
 
+.left-panel-video{
+    margin-right: 50px; 
+    background-color: #08d9d6; 
+    height: 100vh
+}
+
 .nav1{
     background-color: #08d9d6; 
     margin: 25px;
@@ -101,11 +107,23 @@ a , span, button,  p, h3, label, h6, h5{
     font-weight: 700;
 }
 
+.delete{
+    position: absolute; 
+    right: 30px; 
+    top: 82.5px;
+}
+
 @media(max-width: 991px){
     
     .left-panel{
         margin-right: 0px; 
-        background-color: #08d9d6;
+        height: auto;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .left-panel-video{
+        margin-right: 0px; 
         height: auto;
         margin-bottom: 20px;
         padding-bottom: 20px;
@@ -178,6 +196,23 @@ a , span, button,  p, h3, label, h6, h5{
     .selectall{
         font-size: 0.9rem;
     }
+
+    .delete{
+        top: 82px;
+    }
+
+    .nav1{
+        margin: 15px;
+        margin-bottom: 0px;
+    }
+
+    .main-div{
+        margin-top: 0px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+
 }  
 
 @media(max-width: 396px){
@@ -209,6 +244,10 @@ a , span, button,  p, h3, label, h6, h5{
     .right-heading{
         font-size: 1.2rem;
     }
+
+    .delete{
+        top: 72px;
+    }
 }  
 
 
@@ -230,6 +269,8 @@ a , span, button,  p, h3, label, h6, h5{
     font-size: 1.1rem;
     color: #08d9d6;
 }
+
+
 
 @media(max-width: 386px){
     .select-video{

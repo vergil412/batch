@@ -230,6 +230,11 @@ a , span, button,  p, h3, label, h6, h5{
 }  
 
 @media(max-width: 396px){
+    
+    .add-btn{ 
+        top:12px; 
+    }
+    
     .user{
         color: #08d9d6; 
         font-weight: 500; 

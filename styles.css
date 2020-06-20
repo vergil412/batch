@@ -289,6 +289,14 @@ a , span, button,  p, h3, label, h6, h5{
     color: #08d9d6;
 }
 
+.add-vdo{
+    background-color: #08d9d6; 
+    color: white;
+    font-weight: 600 ;
+    position: absolute; 
+    right: 25px; 
+    top: 13px;
+}
 
 
 @media(max-width: 386px){
@@ -301,5 +309,9 @@ a , span, button,  p, h3, label, h6, h5{
         margin-left: 10px; 
         font-weight: 700; 
         font-size: 0.9rem;
+    }
+
+    .add-vdo{
+        top: 11px;
     }
 }
